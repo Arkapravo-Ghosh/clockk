@@ -1,6 +1,7 @@
 # ClocKK
-LCD type clock using html, css and javascript
+Simple LCD type clock using HTML, CSS and JavaScript
 
-<center><img src="assets/screenshot.png"></center>
-
-<i>not yet a responsive design. for phones, rotate the device to landscape</i>
+## Screenshot
+<div align=center>
+    <img width=720 src="docs/images/screenshot.jpeg">
+</div>
