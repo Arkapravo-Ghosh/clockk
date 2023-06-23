@@ -13,8 +13,9 @@ function theClock() {
   second = second.toString();
   second = second.padStart(2, "0");
 
-  document.getElementById("clock").innerText =
-    hour + ":" + minute + ":" + second;
-}
+  const time = hour + ":" + minute + ":" + second;
+
+  document.getElementById("clock").innerText = time;
+};
 
 setInterval(theClock, 1000);
