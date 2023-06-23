@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 #clock {
@@ -36,11 +37,18 @@ body {
   /* border-radius: 8px; */
 }
 
-.overlay {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
+#clock_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #clock {
+    display: none;
+  }
+
+  #clock_mobile {
+    display: block;
+    font-size: calc(100vh / 4);
+    text-shadow: 0px 0px 60px red;
+  }
 }
