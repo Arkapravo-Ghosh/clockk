@@ -13,9 +13,13 @@ function theClock() {
   second = second.toString();
   second = second.padStart(2, "0");
 
-  const time = hour + ":" + minute + ":" + second;
+  let desktop_time = hour + ":" + minute + ":" + second;
 
-  document.getElementById("clock").innerText = time;
+  document.getElementById("clock").innerText = desktop_time;
+
+  document.getElementById("hr").innerText = hour;
+  document.getElementById("min").innerText = minute;
+  document.getElementById("sec").innerText = second;
 };
 
 setInterval(theClock, 1000);
