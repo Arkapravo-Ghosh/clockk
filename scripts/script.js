@@ -1,3 +1,5 @@
+let beep = new Audio('assets/audio/beep.wav');
+
 function theClock() {
   let fullTime = new Date();
 
@@ -15,11 +17,14 @@ function theClock() {
 
   let desktop_time = hour + ":" + minute + ":" + second;
 
+  beep.play();
   document.getElementById("clock").innerText = desktop_time;
-
   document.getElementById("hr").innerText = hour;
   document.getElementById("min").innerText = minute;
   document.getElementById("sec").innerText = second;
 };
 
+setTimeout(() => {
+  alert("Settings page will be added soon. as of now, you may mute the tab if you do not wish to have the 'beep' sound.");
+}, 5000);
 setInterval(theClock, 1000);
