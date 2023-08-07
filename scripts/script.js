@@ -17,7 +17,7 @@ function theClock() {
 
   let desktop_time = hour + ":" + minute + ":" + second;
 
-  beep.play();
+  // beep.play();
   document.getElementById("clock").innerText = desktop_time;
   document.getElementById("hr").innerText = hour;
   document.getElementById("min").innerText = minute;
