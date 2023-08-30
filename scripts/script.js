@@ -24,7 +24,4 @@ function theClock() {
   document.getElementById("sec").innerText = second;
 };
 
-setTimeout(() => {
-  alert("Settings page will be added soon. as of now, you may mute the tab if you do not wish to have the 'beep' sound.");
-}, 5000);
 setInterval(theClock, 1000);
